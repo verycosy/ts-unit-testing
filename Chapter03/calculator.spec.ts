@@ -1,4 +1,4 @@
-import { Calculator } from './calculator';
+import { Calculator } from '../calculator';
 
 describe('CalculatorTests', () => {
   it('두 숫자의 합', () => {

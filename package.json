@@ -15,6 +15,7 @@
     "@babel/preset-typescript": "^7.16.0",
     "@types/jest": "^27.0.2",
     "babel-jest": "^27.3.1",
-    "jest": "^27.3.1"
+    "jest": "^27.3.1",
+    "ts-mockito": "^2.6.1"
   }
 }
