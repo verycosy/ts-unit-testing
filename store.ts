@@ -13,7 +13,7 @@ export enum Product {
 export class Store implements IStore {
   private readonly _inventory = new Map<Product, number>();
 
-  private changeQuantity(product: Product, quantity: number): void {
+  private changeProductQuantity(product: Product, quantity: number): void {
     this._inventory.set(product, quantity);
   }
 
@@ -27,15 +27,15 @@ export class Store implements IStore {
     }
 
     const remaining = this.getInventory(product);
-    this.changeQuantity(product, remaining - quantity);
+    this.changeProductQuantity(product, remaining - quantity);
   }
 
   public addInventory(product: Product, quantity: number): void {
     if (this._inventory.has(product)) {
       const remaining = this.getInventory(product);
-      this.changeQuantity(product, remaining + quantity);
+      this.changeProductQuantity(product, remaining + quantity);
     } else {
-      this.changeQuantity(product, quantity);
+      this.changeProductQuantity(product, quantity);
     }
   }
 

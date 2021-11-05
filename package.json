@@ -17,5 +17,8 @@
     "babel-jest": "^27.3.1",
     "jest": "^27.3.1",
     "ts-mockito": "^2.6.1"
+  },
+  "dependencies": {
+    "js-joda": "^1.11.0"
   }
 }
