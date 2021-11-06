@@ -15,7 +15,9 @@ export interface IRenderer {
 }
 
 export class MessageRenderer implements IRenderer {
-  public readonly subRenderers: IRenderer[];
+  // public readonly subRenderers: IRenderer[];
+  // 클라이언트에게 필요한 건 render 메서드뿐이다
+  private readonly subRenderers: IRenderer[];
 
   constructor() {
     this.subRenderers = [
