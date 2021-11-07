@@ -1,6 +1,7 @@
 import { instance, mock, verify, when } from 'ts-mockito';
 
 describe('ControllerTests', () => {
+  // 통신 기반 테스트
   it('환영 이메일 발송', () => {
     const emailGatewayMock = mock<IEmailGateway>(); // Mock(도구)로 mock 생성
     const sut = Controller.fromEmailGateway(instance(emailGatewayMock));
